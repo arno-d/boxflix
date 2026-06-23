@@ -1,6 +1,9 @@
 <?php
 include 'inc-cabecalho.php';
 ?>
+
+    <h1 class="text-center">Cadastro de Filmes</h1>
+
     <main>
         <div class="container">
             <div class="card">
@@ -17,7 +20,7 @@ include 'inc-cabecalho.php';
                     </select><br>
                     Trailer: <input name="trailer" class="form-control"><br>
                     Gênero: <input name="genero" class="form-control"><br>
-                    Duração: <input name="duracao" class="form-control"><br>
+                    Duração: <input type="text" name="duracao" class="form-control"><br>
                     Descrição: <textarea name="descricao" class="form-control"></textarea><br>
                     <button type="submit" class="btn btn-secondary btn-sm">Salvar</button>
                     <button type="reset" class="btn btn-secondary btn-sm">Limpar</button>

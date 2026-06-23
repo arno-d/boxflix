@@ -9,7 +9,7 @@ $duracao = $_POST['duracao'];
 $descricao = $_POST['descricao'];
  
 include "inc-conexao.php";
-$sql = "insert into tb_filmes (nome_filme, foto_de_capa, ano, avaliacao, trailer, genero, duracao, descricao) values('$nome', '$foto', $ano, '$avaliacao', '$trailer', '$genero', $duracao, '$descricao')";
+$sql = "insert into tb_filmes (nome_filme, foto_de_capa, ano, avaliacao, trailer, genero, duracao, descricao) values('$nome', '$foto', $ano, '$avaliacao', '$trailer', '$genero', '$duracao', '$descricao')";
 $resultado = mysqli_query($conn, $sql);
  
 echo "Conteudo inserido com sucesso!!";
