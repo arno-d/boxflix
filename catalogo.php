@@ -6,8 +6,6 @@ include 'inc-cabecalho.php';
     <div class="container">
     <div class="row">
         
-
-
     <?php
     include 'inc-conexao.php';
 
@@ -51,14 +49,15 @@ include 'inc-cabecalho.php';
         // ; 
 
         ?>
-    
-    <div class="row" style="width:700px">
-        <div class="col-4">
-        <img class="img-fluid rounded" src='<?=$foto_de_capa?>'> <br>
-        <?= $nome_filme ?>
+    <div class="col-3">
+        <div class="card">
+            <img class="card-img-top" src="<?=$foto_de_capa ?>" alt="<?=$nome_filme ?>">
+            <div class="card-body">
+                <h5 class="card-title"><?=$nome_filme ?></h5>
+                <p class="card-text"><?=$descricao ?></p>
+            </div>
         </div>
     </div>
- 
 <?php
  
     } 
